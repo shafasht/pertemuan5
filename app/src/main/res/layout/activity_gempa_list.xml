@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+
+        android:background="?android:attr/windowBackground"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:title="List Gempa 5 +" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGempa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
